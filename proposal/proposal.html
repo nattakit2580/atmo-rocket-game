@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>จรวดข้ามบรรยากาศ 5 ชั้น - เอกสารนำเสนอโครงการ</title>
+<style>
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: "Leelawadee UI", "Tahoma", "Segoe UI", sans-serif;
+    color: #22252e;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  @page { size: A4; margin: 0; }
+  .page { position: relative; width: 210mm; min-height: 297mm; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .pad { padding: 14mm 18mm; }
+
+  /* ---------- Cover ---------- */
+  .cover {
+    background: radial-gradient(ellipse at 20% 15%, #2a2f6b 0%, #12153a 45%, #070914 100%);
+    color: #fff;
+    height: 297mm;
+    position: relative;
+  }
+  .stars { position: absolute; inset: 0; }
+  .star { position: absolute; background: #ffffff; border-radius: 50%; opacity: 0.85; }
+  .cover-content {
+    position: absolute; left: 0; right: 0; top: 46%; transform: translateY(-50%);
+    text-align: center; padding: 0 20mm;
+  }
+  .eyebrow {
+    letter-spacing: 4px; font-size: 12px; color: #8fd6c1; text-transform: uppercase;
+    margin-bottom: 14px; font-weight: bold;
+  }
+  .cover h1 {
+    font-size: 42px; margin: 0 0 10px; font-weight: bold;
+    color: #ffd980;
+  }
+  .cover .subtitle { font-size: 17px; color: #cfd6f0; margin-bottom: 30px; }
+  .cover .tagline {
+    display: inline-block; padding: 10px 26px; border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 999px; font-size: 13px; color: #e7ebff; background: rgba(255,255,255,0.05);
+  }
+  .cover-foot {
+    position: absolute; bottom: 16mm; left: 0; right: 0; text-align: center;
+    color: #8890b8; font-size: 11px; letter-spacing: 1px;
+  }
+  .rocket-mini { position: absolute; bottom: 70mm; left: 50%; transform: translateX(-50%); }
+
+  /* ---------- Section headers ---------- */
+  .kicker { color: #2f8f6f; font-weight: bold; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 6px; }
+  h2.sec-title { font-size: 24px; margin: 0 0 4px; color: #12153a; }
+  .sec-sub { color: #666f8f; font-size: 13px; margin-bottom: 20px; }
+  .rule { height: 3px; width: 46px; background: linear-gradient(90deg,#ffb347,#2f8f6f); border-radius: 3px; margin: 8px 0 16px; }
+
+  p.lead { font-size: 14.5px; color: #383e52; }
+
+  /* ---------- Feature grid ---------- */
+  .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 6px; }
+  .feature-item {
+    background: #f6f8fc; border: 1px solid #e8ecf5; border-radius: 10px;
+    padding: 14px 16px; break-inside: avoid;
+  }
+  .feature-item .f-title { font-weight: bold; color: #12153a; font-size: 13.5px; margin-bottom: 4px; }
+  .feature-item .f-title::before { content: "✓ "; color: #2f8f6f; }
+  .feature-item .f-desc { color: #4a5170; font-size: 12.5px; }
+
+  /* ---------- Screenshots ---------- */
+  .shot-hero { border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(20,25,60,0.18); border: 1px solid #dfe4f0; }
+  .shot-hero img { display: block; width: 100%; }
+  .shot-caption { text-align: center; color: #666f8f; font-size: 11.5px; margin-top: 8px; }
+  .shot-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+  .shot-grid-2 .shot-hero img { width: 100%; }
+
+  /* ---------- Callout / tech ---------- */
+  .callout {
+    background: #12153a; color: #e7ebff; border-radius: 12px; padding: 14px 18px; margin-top: 8px;
+  }
+  .callout .c-title { color: #ffd166; font-weight: bold; font-size: 13.5px; margin-bottom: 6px; }
+  .callout p { font-size: 12.5px; color: #cfd6f0; margin: 0 0 6px; line-height: 1.55; }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .chip { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: #e7ebff;
+    font-size: 11px; padding: 5px 12px; border-radius: 999px; }
+
+  /* ---------- Table ---------- */
+  table.scope { width: 100%; border-collapse: collapse; margin-top: 4px; font-size: 12px; }
+  table.scope th { text-align: left; background: #12153a; color: #fff; padding: 9px 12px; font-size: 11.5px; }
+  table.scope th:last-child, table.scope td:last-child { text-align: center; }
+  table.scope td { padding: 6.5px 12px; border-bottom: 1px solid #e8ecf5; color: #383e52; }
+  table.scope tr:nth-child(even) td { background: #f8f9fd; }
+  table.scope tr.total td { font-weight: bold; color: #12153a; background: #eef6f1; border-top: 2px solid #2f8f6f; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 10.5px; font-weight: bold; }
+  .badge.mid { background: #fff3e0; color: #b5691a; }
+  .badge.high { background: #fde8e8; color: #c0392b; }
+  .badge.low { background: #e8f6ef; color: #1f7a52; }
+
+  .note { font-size: 11.5px; color: #7a8199; margin-top: 10px; }
+
+  /* ---------- Two-col list ---------- */
+  .twocol { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 8px; }
+  .list-title { font-weight: bold; color: #12153a; font-size: 13px; margin-bottom: 8px; }
+  ul.plain { margin: 0; padding-left: 18px; }
+  ul.plain li { font-size: 12.5px; color: #4a5170; margin-bottom: 7px; }
+
+  .risk-box {
+    border: 1px solid #f0d9b5; background: #fffaf0; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
+    break-inside: avoid;
+  }
+  .risk-box .r-title { font-weight: bold; color: #a15c00; font-size: 12.5px; margin-bottom: 4px; }
+  .risk-box .r-desc { font-size: 12px; color: #5c5140; }
+
+  /* ---------- Footer / closing ---------- */
+  .closing { background: linear-gradient(135deg, #12153a, #1c2158); color: #fff; border-radius: 14px; padding: 26px 28px; margin-top: 20px; }
+  .closing h3 { margin: 0 0 8px; font-size: 18px; color: #ffd166; }
+  .closing p { color: #cfd6f0; font-size: 12.5px; }
+  .page-foot { position: absolute; bottom: 10mm; left: 18mm; right: 18mm; display: flex; justify-content: space-between;
+    font-size: 10px; color: #a7adc4; border-top: 1px solid #eceff6; padding-top: 6px; }
+</style>
+</head>
+<body>
+
+<!-- ===================== PAGE 1: COVER ===================== -->
+<div class="page cover">
+  <div class="stars" id="stars"></div>
+  <div class="cover-content">
+    <div class="eyebrow">Project Proposal · Interactive Learning Game</div>
+    <h1>จรวดข้ามบรรยากาศ 5 ชั้น</h1>
+    <div class="subtitle">เกมควบคุมด้วยท่าทางแขนผ่านกล้อง AI — เรียนรู้ชั้นบรรยากาศโลกไปพร้อมกับการเล่น</div>
+    <div class="tagline">เอกสารสรุปขอบเขตงานและสิ่งที่ส่งมอบ</div>
+  </div>
+  <div class="cover-foot">จัดทำเพื่อประกอบการเสนอราคา</div>
+</div>
+
+<!-- ===================== PAGE 2: OVERVIEW + HERO SHOT ===================== -->
+<div class="page">
+  <div class="pad">
+    <div class="kicker">ภาพรวมโครงการ</div>
+    <h2 class="sec-title">เกมที่ให้ผู้เล่นขยับร่างกายจริง ไม่ใช่แค่กดปุ่ม</h2>
+    <div class="rule"></div>
+    <p class="lead">
+      แทนที่จะควบคุมด้วยคีย์บอร์ดหรือจอย ผู้เล่นแค่ยกแขนตัวเองต่อหน้ากล้อง ยกแขนขวาจรวดก็เลี้ยวขวา ยกแขนซ้ายก็เลี้ยวซ้าย
+      ระบบ AI จะจับตำแหน่งตั้งแต่หัวไหล่ไปถึงปลายนิ้วมือแบบเรียลไทม์ ผู้เล่นต้องพาจรวดหลบสิ่งกีดขวางที่ตกลงมา
+      ไต่ระดับผ่านชั้นบรรยากาศของโลกทั้ง 5 ชั้น และได้ความรู้วิทยาศาสตร์ติดตัวกลับไปทุกครั้งที่จบด่าน โดยไม่รู้สึกเหมือนถูกยัดเยียดให้ท่องจำ
+    </p>
+    <p class="lead">
+      เหมาะสำหรับใช้เป็นสื่อการเรียนรู้เชิงโต้ตอบในห้องเรียน งานนิทรรศการวิทยาศาสตร์ หรือบูธกิจกรรมที่ต้องการจุดดึงดูดที่แปลกใหม่กว่าเกมทั่วไป
+    </p>
+
+    <div style="margin-top:22px;">
+      <div class="shot-hero">
+        <img src="../screenshots/02_playing_troposphere.png" alt="หน้าจอเกม ด่านโทรโพสเฟียร์">
+      </div>
+      <div class="shot-caption">ตัวอย่างหน้าจอระหว่างเล่น — ด่านที่ 1 โทรโพสเฟียร์ พร้อมกล่องแสดงผลกล้องและเส้นโครงร่างแขนที่มุมขวาบน</div>
+    </div>
+  </div>
+  <div class="page-foot"><span>จรวดข้ามบรรยากาศ 5 ชั้น</span><span>หน้า 1</span></div>
+</div>
+
+<!-- ===================== PAGE 3: FEATURES ===================== -->
+<div class="page">
+  <div class="pad">
+    <div class="kicker">สิ่งที่ส่งมอบ</div>
+    <h2 class="sec-title">ฟีเจอร์หลักของเกม</h2>
+    <div class="rule"></div>
+
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="f-title">ควบคุมด้วยร่างกายจริง</div>
+        <div class="f-desc">ตรวจจับตำแหน่งไหล่ถึงปลายนิ้วมือแบบเรียลไทม์ผ่านกล้องเว็บแคมทั่วไป ไม่ต้องติดเซนเซอร์หรืออุปกรณ์เสริมใดๆ</div>
+      </div>
+      <div class="feature-item">
+        <div class="f-title">เล่นได้แม้ไม่มีกล้อง</div>
+        <div class="f-desc">ถ้ากล้องใช้ไม่ได้ ระบบสลับไปใช้ปุ่มลูกศรให้อัตโนมัติทันที ไม่มีทางเล่นไม่ได้</div>
+      </div>
+      <div class="feature-item">
+        <div class="f-title">5 ด่าน ครบ 5 ชั้นบรรยากาศ</div>
+        <div class="f-desc">โทรโพสเฟียร์ สตราโทสเฟียร์ มีโซสเฟียร์ เทอร์โมสเฟียร์ เอกโซสเฟียร์ แต่ละด่านมีของตกลงมาให้หลบตรงตามชั้นจริง</div>
+      </div>
+      <div class="feature-item">
+        <div class="f-title">สรุปความรู้ท้ายด่าน</div>
+        <div class="f-desc">จบด่านมีหน้าสรุปข้อเท็จจริงของชั้นบรรยากาศและของแต่ละอย่างที่เพิ่งหลบมา ช่วยให้จำได้มากกว่าท่องจำเฉยๆ</div>
+      </div>
+      <div class="feature-item">
+        <div class="f-title">ภาพเวกเตอร์ทำขึ้นเอง</div>
+        <div class="f-desc">ไม่ได้ใช้รูปสำเร็จรูปจากที่ไหน ทุกชิ้น ตั้งแต่จรวด เมฆ ดาวเทียม ไปจนถึงแสงออโรรา วาดขึ้นใหม่ทั้งหมด</div>
+      </div>
+      <div class="feature-item">
+        <div class="f-title">พร้อมใช้งานทันที</div>
+        <div class="f-desc">แพ็กเป็นไฟล์ .exe เดียว เปิดเล่นบนเครื่อง Windows ได้เลย ไม่ต้องติดตั้งโปรแกรมเสริม</div>
+      </div>
+    </div>
+
+    <div class="shot-grid-2">
+      <div>
+        <div class="shot-hero"><img src="../screenshots/03_playing_thermosphere.png" alt="ด่านเทอร์โมสเฟียร์"></div>
+        <div class="shot-caption">ด่านที่ 4 เทอร์โมสเฟียร์ — บรรยากาศอวกาศยามค่ำคืน พร้อมแสงออโรราและสถานีอวกาศ</div>
+      </div>
+      <div>
+        <div class="shot-hero"><img src="../screenshots/04_level_complete.png" alt="หน้าจอสรุปความรู้ท้ายด่าน"></div>
+        <div class="shot-caption">หน้าจอสรุปความรู้ท้ายด่าน อธิบายชั้นบรรยากาศและของที่เพิ่งหลบมา</div>
+      </div>
+    </div>
+  </div>
+  <div class="page-foot"><span>จรวดข้ามบรรยากาศ 5 ชั้น</span><span>หน้า 2</span></div>
+</div>
+
+<!-- ===================== PAGE 4: TECH + SCOPE TABLE ===================== -->
+<div class="page">
+  <div class="pad">
+    <div class="kicker">เบื้องหลังการพัฒนา</div>
+    <h2 class="sec-title">ทำไมงานนี้ถึงมีมูลค่ามากกว่าที่เห็น</h2>
+    <div class="rule"></div>
+
+    <div class="callout">
+      <div class="c-title">เทคโนโลยีที่ใช้อยู่เบื้องหลัง</div>
+      <p>
+        ระบบตรวจจับท่าทางในเกมนี้ใช้ AI ตัวเดียวกับที่อยู่เบื้องหลังแอปฟิตเนสและกล้องมือถือรุ่นใหม่ๆ (Google MediaPipe)
+        ระหว่างพัฒนาต้องแก้โจทย์ทางเทคนิคเฉพาะหน้าหลายจุด ทั้งการอัปเดตให้ทันเวอร์ชัน AI model ล่าสุดที่เปลี่ยนวิธีทำงานทั้งระบบ
+        การออกแบบให้โปรแกรมรู้ว่าแขนไหนอยู่ฝั่งซ้าย-ขวาของจอได้ถูกต้องไม่ว่าผู้เล่นจะหันตัวไปทางไหน
+        และการไล่หาสาเหตุเชิงลึกของบั๊กที่ทำให้โปรแกรมอ่านไฟล์โมเดลไม่ได้ในบางสภาพแวดล้อม
+        รายละเอียดเหล่านี้คือส่วนที่ทำให้งานสาย Computer Vision ใช้เวลาและความเชี่ยวชาญมากกว่าแอปทั่วไปอย่างมีนัยสำคัญ
+      </p>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">Google MediaPipe (Pose AI)</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">Pygame Engine</span>
+        <span class="chip">Multi-threaded Camera Pipeline</span>
+        <span class="chip">PyInstaller Packaging</span>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;">
+      <div class="kicker">ประเมินขอบเขตงาน</div>
+      <h2 class="sec-title">สรุปงานและเวลาโดยประมาณ</h2>
+      <div class="rule"></div>
+      <table class="scope">
+        <tr><th>รายการงาน</th><th>ความซับซ้อน</th><th>ชั่วโมงโดยประมาณ</th></tr>
+        <tr><td>วิเคราะห์โจทย์และวางโครงสร้างระบบ</td><td><span class="badge mid">กลาง</span></td><td>2–3</td></tr>
+        <tr><td>ตั้งค่าระบบ AI และแก้ปัญหาความเข้ากันได้ของไลบรารี</td><td><span class="badge high">สูง</span></td><td>5–7</td></tr>
+        <tr><td>ระบบตรวจจับท่าทางแขนแบบเรียลไทม์</td><td><span class="badge high">สูง</span></td><td>8–12</td></tr>
+        <tr><td>ระบบเกมหลัก (ฟิสิกส์ การชน คะแนน ชีวิต)</td><td><span class="badge mid">กลาง-สูง</span></td><td>8–10</td></tr>
+        <tr><td>ออกแบบภาพเวกเตอร์ของแต่ละด่าน</td><td><span class="badge mid">กลาง</span></td><td>6–8</td></tr>
+        <tr><td>ค้นคว้าและเขียนเนื้อหาความรู้ 5 ด่าน</td><td><span class="badge mid">กลาง</span></td><td>3–4</td></tr>
+        <tr><td>หน้าจอ UI ทั้งหมด (เมนู สรุปด่าน จบเกม)</td><td><span class="badge mid">กลาง</span></td><td>4–5</td></tr>
+        <tr><td>กล่องแสดงผลกล้องและเส้นโครงร่างแขน</td><td><span class="badge mid">กลาง</span></td><td>3–4</td></tr>
+        <tr><td>ทดสอบระบบทุกจุด (ด่าน การชน กรณีไม่มีกล้อง)</td><td><span class="badge mid">กลาง</span></td><td>3–4</td></tr>
+        <tr><td>แพ็กเป็นไฟล์ .exe และแก้ปัญหาการ build</td><td><span class="badge high">สูง</span></td><td>4–6</td></tr>
+        <tr><td>เอกสารประกอบและคู่มือใช้งาน</td><td><span class="badge low">ต่ำ</span></td><td>2</td></tr>
+        <tr class="total"><td>รวมโดยประมาณ</td><td></td><td>48–65 ชั่วโมง</td></tr>
+      </table>
+      <div class="note">* ตัวเลขชั่วโมงใช้เป็นฐานประเมินมูลค่างานตามความซับซ้อน ไม่ใช่ระยะเวลาส่งมอบจริง ซึ่งขึ้นกับคิวงานและรอบแก้ไขที่ตกลงกัน</div>
+    </div>
+  </div>
+  <div class="page-foot"><span>จรวดข้ามบรรยากาศ 5 ชั้น</span><span>หน้า 3</span></div>
+</div>
+
+<!-- ===================== PAGE 5: RISK + NOT INCLUDED + CLOSING ===================== -->
+<div class="page">
+  <div class="pad">
+    <div class="kicker">ข้อควรทราบ</div>
+    <h2 class="sec-title">สิ่งที่ควรวางแผนเผื่อไว้</h2>
+    <div class="rule"></div>
+
+    <div class="risk-box">
+      <div class="r-title">รอบทดสอบกับผู้เล่นจริง (Tuning Round)</div>
+      <div class="r-desc">
+        ความแม่นยำของการตรวจจับแขนขึ้นอยู่กับแสง ระยะห่างจากกล้อง และมุมกล้องของแต่ละสถานที่จริง
+        แนะนำให้กันเวลาไว้สำหรับทดลองเล่นจริงและปรับความไวอีก 1 รอบหลังส่งมอบ แยกจากรอบพัฒนาหลัก
+      </div>
+    </div>
+    <div class="risk-box">
+      <div class="r-title">ความเข้ากันได้ของเครื่องปลายทาง</div>
+      <div class="r-desc">
+        เกมทดสอบบน Windows เป็นหลัก หากต้องใช้บนเครื่องที่สเปกต่ำมากหรือไม่มีกล้องเว็บแคมมาตรฐาน ควรแจ้งล่วงหน้าเพื่อวางแผนทดสอบเพิ่ม
+      </div>
+    </div>
+
+    <div class="twocol" style="margin-top:22px;">
+      <div>
+        <div class="list-title">รวมอยู่ในงานนี้แล้ว</div>
+        <ul class="plain">
+          <li>ซอร์สโค้ดเกมฉบับเต็มพร้อมคอมเมนต์</li>
+          <li>ไฟล์ .exe พร้อมใช้งานจริง</li>
+          <li>โมเดล AI และไฟล์ที่จำเป็นทั้งหมด</li>
+          <li>คู่มือติดตั้ง ใช้งาน และปรับแต่งความยาก</li>
+        </ul>
+      </div>
+      <div>
+        <div class="list-title">ต่อยอดได้ในอนาคต (นอกขอบเขตนี้)</div>
+        <ul class="plain">
+          <li>กราฟิก/สไปรต์จากดีไซเนอร์ เสียงประกอบและเพลง</li>
+          <li>ระบบเก็บคะแนนสูงสุด / สถิติผู้เล่น</li>
+          <li>เซ็นใบรับรองโค้ดป้องกัน Windows แจ้งเตือน</li>
+          <li>รองรับ macOS หลายภาษา หรือจอยควบคุม</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="closing">
+      <h3>พร้อมพูดคุยรายละเอียดเพิ่มเติม</h3>
+      <p>
+        หากต้องการปรับขอบเขตงาน เพิ่มด่าน เปลี่ยนเนื้อหาความรู้ หรือขยายไปยังแพลตฟอร์มอื่น ยินดีคุยรายละเอียดและ
+        ปรับใบเสนอราคาให้ตรงกับความต้องการของแต่ละโครงการ
+      </p>
+    </div>
+  </div>
+  <div class="page-foot"><span>จรวดข้ามบรรยากาศ 5 ชั้น</span><span>หน้า 4</span></div>
+</div>
+
+<script>
+  // สุ่มดาวพื้นหลังหน้าปก
+  var starsEl = document.getElementById("stars");
+  var s = "";
+  for (var i = 0; i < 140; i++) {
+    var x = Math.random() * 100;
+    var y = Math.random() * 100;
+    var size = (Math.random() * 2 + 0.6).toFixed(1);
+    var op = (Math.random() * 0.6 + 0.3).toFixed(2);
+    s += '<div class="star" style="left:' + x + '%; top:' + y + '%; width:' + size + 'px; height:' + size + 'px; opacity:' + op + ';"></div>';
+  }
+  starsEl.innerHTML = s;
+</script>
+
+</body>
+</html>
