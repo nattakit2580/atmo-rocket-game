@@ -1,0 +1,41 @@
+movie_id,movie_title,total_reviews_available,population_size,invalid_removed,english_population,non_english_reviews,duplicates_removed,eligible_population,sample_requested,sample_obtained,random_seed,sampling_method,collection_date,source,collection_status,notes
+M01,The Godfather,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M02,Pulp Fiction,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M03,The Shawshank Redemption,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M04,Fight Club,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M05,The Matrix,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M06,Spirited Away,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M07,The Dark Knight,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M08,Inception,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M09,The Social Network,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M10,Drive,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M11,Her,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M12,Interstellar,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M13,Whiplash,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M14,Mad Max: Fury Road,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M15,La La Land,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M16,Moonlight,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M17,Get Out,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M18,Lady Bird,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M19,Call Me by Your Name,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M20,Hereditary,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M21,Spider-Man: Into the Spider-Verse,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M22,Parasite,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M23,Midsommar,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M24,Joker,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M25,Little Women,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M26,Knives Out,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M27,Portrait of a Lady on Fire,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M28,Everything Everywhere All at Once,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M29,Aftersun,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M30,The Batman,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M31,Pearl,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M32,Oppenheimer,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M33,Barbie,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M34,Past Lives,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M35,Poor Things,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M36,Killers of the Flower Moon,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M37,Dune: Part Two,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M38,Challengers,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M39,The Substance,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.
+M40,Anora,,0,0,0,0,0,0,500,0,42,Simple Random Sampling without replacement (pandas.DataFrame.sample),,,AWAITING_RAW_DATA,No permitted raw review data supplied yet.

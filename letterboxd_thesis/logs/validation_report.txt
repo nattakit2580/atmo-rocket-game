@@ -1,0 +1,34 @@
+LETTERBOXD THESIS DATASET - VALIDATION REPORT
+Generated: 2026-09-27 08:52 UTC
+
+Movies requested: 40
+Movies completed: 0/40
+Movies with insufficient English reviews: 0
+Movies awaiting raw data: 40
+Reviews target: 20,000
+Reviews collected: 0
+Duplicate review IDs: 0
+Non-English records in final dataset: 0
+Missing review texts: 0
+
+Integrity checks: ALL PASS
+Dataset complete (40 x 500): NO
+
+Detailed checks
+---------------
+[PASS      ] (COMPLETENESS) Movies configured = 40: 40 configured
+[INCOMPLETE] (COMPLETENESS) Movies completed (500 reviews each): 0/40 complete; 0 insufficient; 40 awaiting raw data
+[INCOMPLETE] (COMPLETENESS) Reviews collected vs target 20,000: 0/20,000
+[PASS      ] (INTEGRITY) No film exceeds 500 reviews: ok
+[PASS      ] (INTEGRITY) COMPLETE films have exactly 500 reviews: ok
+[PASS      ] (INTEGRITY) Non-English records in final dataset = 0: 0
+[PASS      ] (INTEGRITY) Duplicate review IDs = 0: 0
+[PASS      ] (INTEGRITY) Duplicate review URLs = 0: 0
+[PASS      ] (INTEGRITY) Exact duplicate review texts within a film = 0: 0
+[INFO      ] (INFO) Identical texts appearing under different films: 0 (kept: different films are different reviews, e.g. short texts such as 'masterpiece')
+[PASS      ] (INTEGRITY) Missing review texts = 0: 0
+[PASS      ] (INTEGRITY) sampling_seed recorded (= 42) on every record: 0 records with other/missing seed
+[PASS      ] (INTEGRITY) Every record states its source: 0
+[PASS      ] (INTEGRITY) Every record states collected_at: 0
+[PASS      ] (INTEGRITY) No username column in final dataset: ok
+[PASS      ] (INTEGRITY) Every film has a Sampling Log entry: 40 entries
