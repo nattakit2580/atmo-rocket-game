@@ -1,2 +1,0 @@
-movie_id,letterboxd_slug,movie_title,movie_year,review_id,review_url,review_text,review_date,rating,username,source,collected_at
-M01,the-godfather,The Godfather,1972,EXAMPLE-0001,https://letterboxd.com/example_member/film/the-godfather/,"Example review text goes here. Replace this file's rows with real permitted data.",2024-05-01,4.5,example_member,"Letterboxd - approved API access (ref: ...)",2026-10-01T10:00:00Z
